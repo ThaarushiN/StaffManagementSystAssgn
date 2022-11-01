@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+
+body{
+	background: #8FBC8F	;
+}
+
+.footer {
+
+} 
+
+
+
+.wrapper{
+
+}
+.header 
+{
+	background-color: 	#2F4F4F;
+	height: 400px;
+}
+
+.header p	{
+	float: 	right;
+}
+
+/*.footer address{
+		padding: 0;
+		border: 0;
+	
+}*/
+
+.body a{
+		font-size: 	24px;
+}
+
+.contact{
+	
+}
+
+.faq{
+	float: right;
+	
+}

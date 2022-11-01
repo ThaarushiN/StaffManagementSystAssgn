@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>homepage</title>
+	<link rel="stylesheet" type="text/css" href="	index.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+</head>
+<body onload=display_ct();>
+	<div class="header d-flex align-items-center justify-content-center">
+		<div class="position-absolute top-0 end-0">	
+				<p id="systDate">	</p>
+
+				<script type="text/javascript">
+
+						function display_c(){
+						var refresh=1000; // Refresh rate in milli seconds
+						mytime=setTimeout('display_ct()',refresh)
+						}
+
+						function display_ct() {
+						var x = new Date()
+						document.getElementById("systDate").innerHTML = x;
+						display_c();
+ 						}
+
+				</script>
+
+		</div><!-- dt -->
+
+		<h1>Staff Management System</h1>
+	</div><!-- header -->
+	<div class="body text-center">
+		<a href="login.jsp" class="	btn	">Log In</a>
+	</div><!-- body -->
+	<div class="footer">
+		<address class="	position-absolute bottom-0 start-0">
+			<a href="tel:0750999" class="	btn"><i class="fa-solid fa-phone"></i></a>
+			<a href="mailto:staffmngment@cmpny" class="	btn	"><i class="fa-solid fa-envelope"></i></a>
+		</address>
+		<a href="" class="position-absolute bottom-0 end-0	btn">FAQ</a>
+	</div><!-- footer -->
+
+</body>
+</html>
