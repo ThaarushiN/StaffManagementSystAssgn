@@ -7,8 +7,8 @@ public class Employee {
 	protected String name, unitNo, stName, town, city;
 
 
-	private String psswrd;
-	private String username;
+	protected String psswrd;
+	protected String username;
 	
 	public Employee(int empNo, String name, String unitNo, String stName, String town, String city, int depID, String username,
 			String psswrd) {

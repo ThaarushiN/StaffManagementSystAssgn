@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import java.util.*;
+
 
 @WebServlet("/loginSvlt")
 public class loginSvlt extends HttpServlet {
@@ -21,7 +23,9 @@ public class loginSvlt extends HttpServlet {
 		String usern=request.getParameter("usrn");
 		String pass=request.getParameter("psswrd");
 		
-		EmployeeDBUtil.validate(usern, pass);
+		ArrayList <Employee> emp=EmployeeDBUtil.validate(usern, pass);
+		request.setAttribute("EmpAttr", emp);
+		
 		
 	}
 
