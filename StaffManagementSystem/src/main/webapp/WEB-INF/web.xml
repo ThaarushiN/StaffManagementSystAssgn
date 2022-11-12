@@ -11,4 +11,14 @@
     <url-pattern>/loginSvlt/*</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>mgrSvlt</servlet-name>
+    <servlet-class>employee_ctrl.mgrSvlt
+      </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mgrSvlt</servlet-name>
+    <url-pattern>/mgrSvlt/*</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

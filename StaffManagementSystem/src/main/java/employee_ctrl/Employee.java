@@ -3,15 +3,15 @@ package employee_ctrl;
 import java.util.Date;
 
 public class Employee {
-	protected int empNo;
+	protected int empNo, depID;
 	protected String name, unitNo, stName, town, city;
-	protected Date dob;
+
 
 	private String psswrd;
-	private String email;
+	private String username;
 	
-	public Employee(int empNo, String name, String unitNo, String stName, String town, String city, Date dob,
-			String psswrd, String email) {
+	public Employee(int empNo, String name, String unitNo, String stName, String town, String city, int depID, String username,
+			String psswrd) {
 		super();
 		this.empNo = empNo;
 		this.name = name;
@@ -19,9 +19,9 @@ public class Employee {
 		this.stName = stName;
 		this.town = town;
 		this.city = city;
-		this.dob = dob;
+		this.depID= depID;
+		this.username=username;
 		this.psswrd = psswrd;
-		this.email = email;
 	}
 
 	public int getEmpNo() {
@@ -49,16 +49,16 @@ public class Employee {
 		return city;
 	}
 
-	public Date getDob() {
-		return dob;
+	public int getDepID() {
+		return depID;
 	}
 
 	public String getPsswrd() {
 		return psswrd;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getUsername() {
+		return username;
 	}
 	
 	

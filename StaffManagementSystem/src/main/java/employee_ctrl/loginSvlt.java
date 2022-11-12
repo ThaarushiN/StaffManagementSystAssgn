@@ -21,8 +21,7 @@ public class loginSvlt extends HttpServlet {
 		String usern=request.getParameter("usrn");
 		String pass=request.getParameter("psswrd");
 		
-		EmployeeDBUtil eutil=new EmployeeDBUtil();
-		eutil.validate(usern, pass);
+		EmployeeDBUtil.validate(usern, pass);
 		
 	}
 

@@ -11,20 +11,20 @@
     <div>
         <table>
             <tr>
-                <td></td>
+                <td>Employee No</td>
                 <td></td>
             </tr>
              <tr>
-                <td></td>
+                <td>Name</td>
                 <td></td>
             </tr>
             <tr><td></td></tr>
              <tr>
-                <td></td>
+                <td>Address</td>
                 <td></td>
             </tr>
              <tr>
-                <td></td>
+                <td>Department</td>
                 <td></td>
             </tr>
         </table>
