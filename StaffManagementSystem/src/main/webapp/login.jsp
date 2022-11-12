@@ -13,7 +13,7 @@
 </head>
 <body>
 	<h3>Log In...</h3>
-    <form action="" method="POST">
+    <form action="loginSvlt" method="POST">
         <label>Username:</label>
         <input type="text" name="usrn">
         <br>
