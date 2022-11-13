@@ -1,6 +1,8 @@
 package employee_ctrl;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,8 +25,22 @@ public class loginSvlt extends HttpServlet {
 		String usern=request.getParameter("usrn");
 		String pass=request.getParameter("psswrd");
 		
-		ArrayList <Employee> emp=EmployeeDBUtil.validate(usern, pass);
-		request.setAttribute("EmpAttr", emp);
+		ArrayList person=EmployeeDBUtil.validate(usern, pass);
+		
+		while(person!=null) {
+			try {
+				
+				//check if arraylist return a manager
+				Manager m=(Manager) (person.get(0));
+				RequestDispatcher dis = request.getRequestDispatcher("managerDashboard.html");
+				dis.forward(request, response);
+			}catch(Exception e) {
+				request.setAttribute("EmpAttr", person);
+				
+				RequestDispatcher dis = request.getRequestDispatcher("profile.jsp");
+				dis.forward(request, response);
+			}
+		}
 		
 		
 	}

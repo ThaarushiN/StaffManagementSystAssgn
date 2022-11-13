@@ -17,7 +17,6 @@ public class mgrDBUtil {
 		
 
 		String q1="CALL updateOtRate(?)";
-		
 		PreparedStatement ps1;
 		try {
 			ps1 = con.prepareStatement(q1);
@@ -40,8 +39,9 @@ public class mgrDBUtil {
 	}
 	
 	public static void changeHrlyRt(Double newHrlyRt) {
-		String q1="CALL updateHrlyRate(?)";
 		
+		
+		String q1="CALL updateHrlyRate(?)";
 		PreparedStatement ps1;
 		try {
 			ps1 = con.prepareStatement(q1);
